@@ -9,22 +9,18 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import FacebookIcon from '../components/Icon/FacebookIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/nuce-pf1.jpg';
+import porfolioImage2 from '../images/portfolio/viettelAI-pf2.jpg';
+import porfolioImage3 from '../images/portfolio/vpbank-pf3.jpg';
+import porfolioImage4 from '../images/portfolio/vpbankneo-pf4.jpg';
+import porfolioImage5 from '../images/portfolio/abbank-pf5.jpg';
+import porfolioImage6 from '../images/portfolio/vpbanks-pf6.jpg';
+import porfolioImage7 from '../images/portfolio/neoinvest-pf7.jpg';
+import porfolioImage8 from '../images/portfolio/abbankdigital-pf8.jpg';
+import porfolioImage9 from '../images/portfolio/scholarship-pf9.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +40,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'SangPM DevOps',
+  description: "Some personal information for career opportunities",
 };
 
 /**
@@ -69,25 +65,24 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Minh Sang.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Ha Noi - VN based <strong className="text-stone-100">DevOps Engineer</strong>, currently working
+          at <strong className="text-stone-100">VPBank Securities</strong> - the most modern securities company in Vietnam, affiliated with VPbank Group.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, you can catch me training <strong className="text-stone-100">Gym</strong>,
+        enjoy coffee on the street, or exploring beautiful{' '}
+        <strong className="text-stone-100">Hanoi Old Quarter</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/assets/Pham-Minh-Sang-CV.pdf',
+      text: 'Resume (Tiếng Việt)',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -104,16 +99,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `DevOps & System Engineer experienced in banking, securities, and high-availability enterprise systems.
+Skilled in Kubernetes/OpenShift, CI/CD pipelines, and monitoring platforms such as Splunk, ELK, Prometheus, and Grafana.
+Strong problem-solving mindset with hands-on expertise in Linux, networking, automation, and cloud technologies.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Lang Ha, Ha Noi', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Viet Nam', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motorcycles, Gym, Travel', Icon: SparklesIcon},
+    {label: 'Study', text: 'Hanoi University of Civil Engineering', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'VPBank Group', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,73 +117,73 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'DevOps',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'System (Windows,Linux,K8s,VM,Network...)',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'Monitoring',
+        level: 9,
+      },
+      {
+        name: 'Cloud',
+        level: 6,
+      },
+      {
+        name: 'CICD',
+        level: 7,
+      }
+    ],
+  },
+  {
+    name: 'Programming',
+    skills: [
+      {
+        name: 'Bash',
+        level: 9,
+      },
+      {
+        name: 'Python',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'C/C++',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Financial Knowledge',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
+        name: 'Banking operations',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Stock operations',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Crypto',
+        level: 6,
       },
     ],
   },
+{
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'Vietnamese',
+        level: 10,
+      },
+      {
+        name: 'English',
+        level: 5,
+      }
+    ],
+  }
 ];
 
 /**
@@ -196,71 +191,59 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Hanoi University of Civil Engineering',
+    description: 'My University - HUCE, is a public higher education institution in Vietnam. The university is one of the leading universities and among the top seven engineering universities in Vietnam.',
+    url: 'https://huce.edu.vn',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Do Quoc Sam Scholarship',
+    description: 'In 2020, after my efforts in studying, I was awarded the Do Quoc Sam scholarship from Hanoi University of Civil Engineering for being among the top 23 outstanding students.',
+    url: 'https://vatlieu.huce.edu.vn/quyet-dinh-ve-viec-cap-hoc-bong-do-quoc-sam-nam-2020.html',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
+    title: 'Viettel AI',
+    description: 'Viettel AI is Viettel’s leading center for artificial intelligence research and development, building AI platforms and solutions for telecommunications, finance, security, and national digital transformation.',
+    url: 'https://viettelai.vn/en',
+    image: porfolioImage2,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
+    title: 'VPBank',
+    description: 'VPBank is one of Vietnam’s leading commercial banks, providing a comprehensive range of financial services and digital banking solutions to individuals, SMEs, and large enterprises.',
+    url: 'https://www.vpbank.com.vn/ve-chung-toi',
+    image: porfolioImage3,
   },
+  {
+    title: 'VPBank NEO',
+    description: 'VPBank NEO is VPBank’s fully digital banking platform, offering seamless online financial services, mobile transactions, and personalized digital experiences for customers.',
+    url: 'https://www.vpbank.com.vn/ca-nhan',
+    image: porfolioImage4,
+  },
+  {
+    title: 'ABBank',
+    description: 'ABBank is a growing Vietnamese commercial bank that provides financial services for individuals and businesses, focusing on service quality, customer experience, and digital transformation.',
+    url: 'https://abbank.vn/ve-chung-toi.html',
+    image: porfolioImage5,
+  },
+  {
+    title: 'VPBank Securities',
+    description: 'VPBank Securities (VPBankS) is a leading brokerage and investment service provider in Vietnam, offering modern trading platforms, financial advisory solutions, and a strong digital infrastructure for retail and institutional investors.',
+    url: 'https://www.vpbanks.com.vn/gioi-thieu-chung',
+    image: porfolioImage6,
+  },
+  {
+    title: 'VPBanks NEO Invest',
+    description: 'NEO Invest is VPBankS’s digital investment platform, delivering seamless online securities trading, real-time market data, and a user-friendly experience for investors across web and mobile.',
+    url: 'https://www.vpbanks.com.vn/vpbanks-digital',
+    image: porfolioImage7,
+  },
+  {
+    title: 'ABBank Digital',
+    description: 'ABBank’s Digital Banking services offer seamless online transactions, mobile banking, eKYC, and multi-channel financial solutions, supporting the bank’s strategy toward a modern and customer-centric digital experience.',
+    url: 'https://abbank.vn/ngan-hang-so-abbank',
+    image: porfolioImage8,
+  }
 ];
 
 /**
@@ -268,39 +251,51 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2016 - March 2021',
+    location: 'Computer Networks & System Engineering',
+    title: 'Hanoi University of Civil Engineering',
+    content: <p>Graduated with honors with a GPA of 3.42/4</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'October 2025 - Present',
+    location: 'VPBank Securities - IT INF',
+    title: 'Senior Application Operations Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Operation and deployment trading systems: NEO Invest, FLEX/FDS, FCBonds...
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'July 2024 - October 2025',
+    location: 'ABBank - IT I&O Center',
+    title: 'Senior Application Deployment & Operations Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Operation and deployment banking systems: Omni-channel, Mobile Banking, eKYC, ESB (CP4I), SMS OTT...
+      </p>
+    ),
+  },
+  {
+    date: 'November 2021 - July 2024',
+    location: 'VPBank Digital Factory ',
+    title: 'IT Service Operations Engineer',
+    content: (
+      <p>
+        Operation and deployment banking systems: Omni-channel, SmartOTP, eKYC, WSO2...
+      </p>
+    ),
+  },
+  {
+    date: 'November 2019 - November 2021',
+    location: 'Viettel AI ',
+    title: 'System Administrator',
+    content: (
+      <p>
+        Operation and deployment AI service infrastructure
       </p>
     ),
   },
@@ -313,20 +308,30 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Ho Chi Minh',
+      text: 'Love The Nation, love The Compatriot',
+      image: "/assets/hochiminh.png",
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Ho Chi Minh',
+      text: 'Study well, work well',
+      image: "/assets/hochiminh.png",
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Ho Chi Minh',
+      text: 'Unite well, keep discipline well',
+      image: "/assets/hochiminh.png",
     },
+    {
+      name: 'Ho Chi Minh',
+      text: 'Comply with hygienic regulations',
+      image: "/assets/hochiminh.png",
+    },
+    {
+      name: 'Ho Chi Minh',
+      text: 'Be humble, be truthful, be brave',
+      image: "/assets/hochiminh.png",
+    }
   ],
 };
 
@@ -336,28 +341,28 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Please contact me if you have any questions.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'phamminhsang.nuce@gmail.com',
+      href: 'mailto:phamminhsang.nuce@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Lang Ha - Ha Noi, VietNam',
+      href: 'https://www.google.ca/maps/place/VPBank+Tower+Hanoi/@21.0159762,105.8155895,20z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Facebook,
+      text: 'Pham Minh Sang',
+      href: 'https://www.facebook.com/sang1404',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
-    },
+      text: 'sangpm',
+      href: 'https://github.com/sangpm1404',
+    }
   ],
 };
 
@@ -365,9 +370,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sangpm1404'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/ph%E1%BA%A1m-sang-293782197/'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/sang1404'},
 ];
