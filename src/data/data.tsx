@@ -14,17 +14,17 @@ import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 
-// 3. Local Images
+// 3. Local Images (strict A → Z)
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/porfolioImage1.jpg';//nuce
-import porfolioImage2 from '../images/portfolio/porfolioImage2.jpg';//viettel-ai
-import porfolioImage3 from '../images/portfolio/porfolioImage3.jpg';//vpbank
-import porfolioImage4 from '../images/portfolio/porfolioImage4.jpg';//neo
-import porfolioImage5 from '../images/portfolio/porfolioImage5.jpg';//abb
-import porfolioImage6 from '../images/portfolio/porfolioImage6.jpg';//vpbanks
-import porfolioImage7 from '../images/portfolio/porfolioImage7.jpg';//neoinvest
-import porfolioImage8 from '../images/portfolio/porfolioImage8.jpg';//abbankdigital
-import porfolioImage9 from '../images/portfolio/porfolioImage9.jpg';//scholarship
+import porfolioImage1 from '../images/portfolio/porfolioImage1.jpg';
+import porfolioImage2 from '../images/portfolio/porfolioImage2.jpg';
+import porfolioImage3 from '../images/portfolio/porfolioImage3.jpg';
+import porfolioImage4 from '../images/portfolio/porfolioImage4.jpg';
+import porfolioImage5 from '../images/portfolio/porfolioImage5.jpg';
+import porfolioImage6 from '../images/portfolio/porfolioImage6.jpg';
+import porfolioImage7 from '../images/portfolio/porfolioImage7.jpg';
+import porfolioImage8 from '../images/portfolio/porfolioImage8.jpg';
+import porfolioImage9 from '../images/portfolio/porfolioImage9.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 
