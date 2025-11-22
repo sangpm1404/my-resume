@@ -1,4 +1,3 @@
-// 1. Third-party imports
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
@@ -9,12 +8,10 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-// 2. Local Components
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 
-// 3. Local Images (strict A → Z)
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/porfolioImage1.jpg';
 import porfolioImage2 from '../images/portfolio/porfolioImage2.jpg';
@@ -28,7 +25,6 @@ import porfolioImage9 from '../images/portfolio/porfolioImage9.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 
-// 4. Data Definitions (types)
 import {
   About,
   ContactSection,
