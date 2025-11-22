@@ -67,13 +67,14 @@ const ContactForm: FC = memo(() => {
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="button"
         onClick={() => {
-            window.location.href = "mailto:phamminhsang.nuce@gmail.com";
-              }}
+          window.location.href = "mailto:phamminhsang.nuce@gmail.com?subject=Contact%20from%20Website&body=Hello%20Sang,%0A%0A";
+                        }}
+        type="button"
         >
           Send Message
-      </button>
+        </button>
+ 
     </form>
   );
 });
