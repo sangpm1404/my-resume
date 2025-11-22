@@ -21,7 +21,6 @@
 </div>
 
 ### View a [live demo here.](https://reactresume.com)
-
 ### 🎉 Version 2 is here! New features:
 1. Completely rebuilt with React and full typescript support
 2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
@@ -29,6 +28,7 @@
 4. Re-organized data population file for customizing site.
 5. Significant improvement/modernization of all site sections
  
+**Looking for the old version? You can find it [here.](https://github.com/tbakerx/react-resume-template/releases/tag/v1.0.0)**
 
 ## Description
 
