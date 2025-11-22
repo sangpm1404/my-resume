@@ -1,3 +1,4 @@
+// 1. Third-party imports
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
@@ -8,24 +9,23 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+// 2. Local Components
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-
 // 3. Local Images
 import heroImage from '../images/header-background.webp';
-import profilepic from '../images/profilepic.jpg';
+import porfolioImage5 from '../images/portfolio/abbank-pf5.jpg';
+import porfolioImage8 from '../images/portfolio/abbankdigital-pf8.jpg';
+import porfolioImage7 from '../images/portfolio/neoinvest-pf7.jpg';
 import porfolioImage1 from '../images/portfolio/nuce-pf1.jpg';
+import porfolioImage9 from '../images/portfolio/scholarship-pf9.jpg';
 import porfolioImage2 from '../images/portfolio/viettelAI-pf2.jpg';
 import porfolioImage3 from '../images/portfolio/vpbank-pf3.jpg';
 import porfolioImage4 from '../images/portfolio/vpbankneo-pf4.jpg';
-import porfolioImage5 from '../images/portfolio/abbank-pf5.jpg';
 import porfolioImage6 from '../images/portfolio/vpbanks-pf6.jpg';
-import porfolioImage7 from '../images/portfolio/neoinvest-pf7.jpg';
-import porfolioImage8 from '../images/portfolio/abbankdigital-pf8.jpg';
-import porfolioImage9 from '../images/portfolio/scholarship-pf9.jpg';
+import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-
 // 4. Data Definitions (types)
 import {
   About,
