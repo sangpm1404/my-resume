@@ -17,6 +17,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage5 from '../images/portfolio/abbank-pf5.jpg';
 import porfolioImage8 from '../images/portfolio/abbankdigital-pf8.jpg';
+import porfolioImage10 from '../images/portfolio/CKA.png';
 import porfolioImage7 from '../images/portfolio/neoinvest-pf7.jpg';
 import porfolioImage1 from '../images/portfolio/nuce-pf1.jpg';
 import porfolioImage9 from '../images/portfolio/scholarship-pf9.jpg';
@@ -39,6 +40,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+
 
 
 /**
@@ -74,7 +76,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Ha Noi - VN based <strong className="text-stone-100">DevOps Engineer</strong>, currently working
+        I'm a Hanoi-based <strong className="text-stone-100">DevOps Engineer</strong>, currently working
           at <strong className="text-stone-100">VPBank Securities</strong> - the most modern securities company in Vietnam, affiliated with VPbank Group.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -109,7 +111,7 @@ Skilled in Kubernetes/OpenShift, CI/CD pipelines, and monitoring platforms such 
 Strong problem-solving mindset with hands-on expertise in Linux, networking, automation, and cloud technologies.`,
   aboutItems: [
     {label: 'Location', text: 'Lang Ha, Ha Noi', Icon: MapIcon},
-    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Viet Nam', Icon: FlagIcon},
     {label: 'Interests', text: 'Motorcycles, Gym, Travel', Icon: SparklesIcon},
     {label: 'Study', text: 'Hanoi University of Civil Engineering', Icon: AcademicCapIcon},
@@ -248,20 +250,27 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'ABBank’s Digital Banking services offer seamless online transactions, mobile banking, eKYC, and multi-channel financial solutions, supporting the bank’s strategy toward a modern and customer-centric digital experience.',
     url: 'https://abbank.vn/ngan-hang-so-abbank',
     image: porfolioImage8,
+  },
+  {
+    title: 'Certified Kubernetes Administrator (CKA)',
+    description: 'Earners of this designation demonstrated the skills, knowledge and competencies to perform the responsibilities of a Kubernetes Administrator',
+    url: 'https://www.credly.com/badges/a7a59cd9-c2a6-4efe-a89c-ca84ec3c1f71',
+    image: porfolioImage10,
   }
 ];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
+export const education : TimelineItem[] = [
   {
     date: 'July 2016 - March 2021',
     location: 'Computer Networks & System Engineering',
     title: 'Hanoi University of Civil Engineering',
     content: <p>Graduated with honors with a GPA of 3.42/4</p>,
-  },
+  }
 ];
+
 
 export const experience: TimelineItem[] = [
   {
@@ -339,6 +348,7 @@ export const testimonial: TestimonialSection = {
     }
   ],
 };
+
 
 /**
  * Contact section
